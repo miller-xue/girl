@@ -1,4 +1,4 @@
-package com.x.girl.pojo;
+package com.x.girl.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

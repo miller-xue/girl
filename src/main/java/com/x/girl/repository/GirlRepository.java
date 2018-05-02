@@ -1,6 +1,6 @@
-package com.x.girl.dao;
+package com.x.girl.repository;
 
-import com.x.girl.pojo.Girl;
+import com.x.girl.domain.Girl;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

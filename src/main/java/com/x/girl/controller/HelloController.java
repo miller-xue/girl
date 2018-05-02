@@ -1,6 +1,6 @@
 package com.x.girl.controller;
 
-import com.x.girl.pojo.GirlProperties;
+import com.x.girl.properties.GirlProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -29,6 +29,5 @@ public class HelloController {
     @GetMapping("/say")
     public String say(@RequestParam(value = "id",required = false,defaultValue = "0") Integer id) {
         return id +"";
-
     }
 }

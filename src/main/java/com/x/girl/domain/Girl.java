@@ -1,7 +1,5 @@
-package com.x.girl.pojo;
+package com.x.girl.domain;
 
-
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
