@@ -2,6 +2,7 @@ package com.x.girl.utils;
 
 import com.x.girl.dto.Result;
 import com.x.girl.enums.ResultEnum;
+import com.x.girl.exception.GirlException;
 
 public class ResultUtil {
     public static Result success(Object obj) {
@@ -14,6 +15,10 @@ public class ResultUtil {
 
     public static Result error(Integer code, String msg) {
         return new Result(code, msg);
+    }
+
+    public static Result error(GirlException e){
+        return error(e.getCode(),e.getMessage());
     }
 
     public static Result error(ResultEnum e) {

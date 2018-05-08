@@ -20,7 +20,7 @@ public class ExceptionHandle {
     public Result handle(Exception e) {
         if (e instanceof GirlException) {
             GirlException exception = (GirlException) e;
-            return ResultUtil.error(exception.getCode(), exception.getMessage());
+            return ResultUtil.error(exception);
         } else {
             logger.error("【系统异常】 {}",e);
             return ResultUtil.error(ResultEnum.UNKONW_ERROR);

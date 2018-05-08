@@ -1,7 +1,6 @@
 package com.x.girl.domain;
 
 
-import org.springframework.beans.factory.annotation.Required;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
